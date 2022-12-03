@@ -12,6 +12,7 @@
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/passwall
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/themeargon
+git clone https://github.com/linkease/istore package/istore
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
@@ -21,4 +22,5 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 # istore
 echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
 echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+echo 'src-git istore https://github.com/linkease/istore.git;main' >> feeds.conf.default
 
