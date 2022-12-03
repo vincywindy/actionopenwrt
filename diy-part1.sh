@@ -11,6 +11,7 @@
 #
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/passwall
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/themeargon
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
