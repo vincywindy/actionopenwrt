@@ -21,5 +21,10 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone https://github.com/linkease/istore.git package/istore
 git clone https://github.com/linkease/istore-ui.git package/istore-ui
+cd ./feeds/luci/themes
+rm -rf luci-theme-argon  
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  
+cd ../../../
+sed -i 's/bootstrap/argon/g' ./feeds/luci/collections/luci/Makefile
 
 
