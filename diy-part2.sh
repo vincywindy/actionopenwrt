@@ -12,5 +12,6 @@
 sed -i 's/bootstrap/argon/g' ./feeds/luci/collections/luci/Makefile
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_generate
+ls
 mv ../config-5.15 openwrt/target/linux/x86/config-5.15
 cat openwrt/target/linux/x86/config-5.15
