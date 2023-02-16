@@ -19,9 +19,6 @@ sed -i '$a src-git nas_luci https://github.com/linkease/nas-packages-luci.git;ma
 sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-cd ./feeds/luci/themes
-rm -rf luci-theme-argon  
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  
-cd ../../../
+
 
 
